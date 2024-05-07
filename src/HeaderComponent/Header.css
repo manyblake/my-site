@@ -12,6 +12,7 @@
 .header__links {
   display: flex;
   gap: var(--sp-m);
+  align-items: center;
 }
 
 .header__cta {
@@ -22,10 +23,40 @@
   gap: var(--sp-s);
 }
 
+.header__switch-lang {
+  cursor: pointer;
+  position: relative;
+}
+
 .header__switch-light {
   width: var(--sp-l);
+  cursor: pointer;
 
   svg {
     vertical-align: middle;
+  }
+  svg path:hover {
+    color: var(--yellow);
+  }
+}
+
+.header__lang-dropdown {
+  background-color: var(--white);
+  border-radius: var(--sp-xs);
+  color: var(--black);
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 25%;
+  top: var(--sp-l);
+
+  .header__dropdown-label {
+    padding: var(--sp-xs) var(--sp-s);
+  }
+
+  .header__dropdown-label.selected {
+    color: var(--white);
+    background-color: var(--green);
+    border-radius: var(--sp-xs);
   }
 }
