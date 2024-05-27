@@ -1,11 +1,24 @@
+import { useState } from "react";
+
 import "./Header.css";
+
 import ListItem from "./ListItem/ListItem";
 import SwitchLanguage from "./SwitchLanguage/SwitchLanguage";
 import SwitchLight from "./SwitchLight/SwitchLight";
 
 function Header() {
+  const [hoveredItem, setHoveredItem] = useState(null);
+
   function clickHandler(clickedItem) {
     console.log(clickedItem);
+  }
+
+  function hoverHandler(item) {
+    setHoveredItem(item);
+  }
+
+  function leaveHandler() {
+    setHoveredItem(null);
   }
 
   return (
@@ -13,16 +26,17 @@ function Header() {
       <div className="header__container">
         <nav className="header__navbar">
           <ul className="header__links">
-            <ListItem onSelect={() => clickHandler("home")}>01. home</ListItem>
-            <ListItem onSelect={() => clickHandler("about")}>
-              02. about
-            </ListItem>
-            <ListItem onSelect={() => clickHandler("projects")}>
-              03. projects
-            </ListItem>
-            <ListItem onSelect={() => clickHandler("curriculum")}>
-              04. curriculum
-            </ListItem>
+            {["home", "about", "projects", "curriculum"].map((item, index) => (
+              <ListItem
+                key={index}
+                className={hoveredItem && hoveredItem !== item ? "faded" : ""}
+                onHover={() => hoverHandler(item)}
+                onLeave={leaveHandler}
+                onSelect={() => clickHandler(item)}
+              >
+                {`0${index + 1}. ${item}`}
+              </ListItem>
+            ))}
           </ul>
 
           <div className="header__cta">

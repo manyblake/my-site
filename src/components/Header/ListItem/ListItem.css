@@ -1,0 +1,11 @@
+.header__list-item .header__link {
+  transition: color 0.4s linear;
+}
+
+.header__list-item .header__link:hover {
+  color: var(--white);
+}
+
+.header__list-item.faded .header__link {
+  color: rgba(255, 255, 255, 0.5);
+}
