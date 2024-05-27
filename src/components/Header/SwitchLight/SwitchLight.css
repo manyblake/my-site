@@ -1,0 +1,11 @@
+.header__switch-light {
+  width: var(--sp-l);
+  cursor: pointer;
+
+  svg {
+    vertical-align: middle;
+  }
+  svg path:hover {
+    color: var(--yellow);
+  }
+}

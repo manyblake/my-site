@@ -1,0 +1,24 @@
+.header__container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.header__navbar {
+  display: flex;
+  padding: var(--sp-m) 0;
+  align-items: center;
+}
+
+.header__links {
+  display: flex;
+  gap: var(--sp-m);
+  align-items: center;
+}
+
+.header__cta {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  padding: var(--sp-m) 0;
+  gap: var(--sp-s);
+}
