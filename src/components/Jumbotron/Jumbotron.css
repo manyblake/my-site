@@ -1,0 +1,20 @@
+.jumbotron__container {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.jumbotron__info {
+  font-size: 18px;
+}
+
+.jumbotron__title {
+  font-size: 48px;
+  padding: var(--sp-l) 0;
+}
+
+.jumbotron__description {
+  max-width: 460px;
+  margin-bottom: var(--sp-m);
+}

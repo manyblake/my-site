@@ -3,4 +3,9 @@
   justify-content: center;
   align-items: center;
   gap: var(--sp-xs);
+  padding: var(--sp-m);
+}
+
+footer {
+  margin-top: auto;
 }
