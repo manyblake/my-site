@@ -1,0 +1,16 @@
+.content__container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.content__title {
+  padding: var(--sp-xl) 0;
+  font-size: var(--sp-xl);
+}
+
+.content__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}

@@ -9,3 +9,7 @@
 .header__list-item.faded .header__link {
   color: rgba(255, 255, 255, 0.5);
 }
+
+.header__link {
+  font-size: var(--sp-m);
+}

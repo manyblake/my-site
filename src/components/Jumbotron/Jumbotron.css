@@ -10,7 +10,7 @@
 }
 
 .jumbotron__title {
-  font-size: 48px;
+  font-size: var(--sp-xxl);
   padding: var(--sp-l) 0;
 }
 

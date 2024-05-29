@@ -2,7 +2,7 @@ import "./Jumbotron.css";
 
 import Bmo from "../../assets/img/Bmo";
 
-function Jumbotron() {
+export default function Jumbotron() {
   return (
     <section className="jumbotron">
       <div className="jumbotron__container">
@@ -19,4 +19,3 @@ function Jumbotron() {
     </section>
   );
 }
-export default Jumbotron;

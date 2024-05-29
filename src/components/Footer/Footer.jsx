@@ -3,7 +3,7 @@ import VSCode from "../../assets/img/VSCode";
 
 import "./Footer.css";
 
-function Footer() {
+export default function Footer() {
   return (
     <footer>
       <p className="footer__text">
@@ -15,5 +15,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;

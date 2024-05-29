@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: var(--white);
   font-family: "Inter", sans-serif;
+  font-size: var(--font-default);
   html,
   body {
     height: 100%;

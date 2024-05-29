@@ -1,0 +1,42 @@
+.card {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc((100% - 60px) / 3);
+
+  border: 3px solid white;
+  border-radius: var(--sp-s);
+  padding: var(--sp-l);
+}
+
+.card__title {
+  margin-bottom: 14px;
+}
+
+.card__description {
+  margin-bottom: 38px;
+}
+
+.card__techs {
+  display: flex;
+  gap: 20px;
+}
+
+.card__techs-stacks {
+  min-width: 100px;
+}
+
+.card__techs-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+
+.card__techs-label {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc((100% - 46px) / 2);
+  padding: 2px 6px;
+  background-color: var(--green);
+  text-align: center;
+  border-radius: var(--sp-s);
+}

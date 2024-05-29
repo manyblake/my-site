@@ -11,4 +11,7 @@
   --sp-m: 1rem;
   --sp-l: 1.5rem;
   --sp-xl: 2rem;
+  --sp-xxl: 3rem;
+
+  --font-default: 18px;
 }

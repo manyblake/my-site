@@ -4,7 +4,7 @@ import "./SwitchLanguage.css";
 import ChevronDown from "../../../assets/img/ChevronDown";
 import DropdownLabel from "./DropdownLabel/DropdownLabel";
 
-function SwitchLanguage() {
+export default function SwitchLanguage() {
   const [dropdownClick, setDropdownClick] = useState(false);
   const [language, setLanguage] = useState("it");
 
@@ -42,5 +42,3 @@ function SwitchLanguage() {
     </div>
   );
 }
-
-export default SwitchLanguage;

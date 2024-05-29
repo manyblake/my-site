@@ -6,7 +6,7 @@ import ListItem from "./ListItem/ListItem";
 import SwitchLanguage from "./SwitchLanguage/SwitchLanguage";
 import SwitchLight from "./SwitchLight/SwitchLight";
 
-function Header() {
+export default function Header() {
   const [hoveredItem, setHoveredItem] = useState(null);
 
   function clickHandler(clickedItem) {
@@ -48,5 +48,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;
