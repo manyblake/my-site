@@ -13,7 +13,8 @@
 }
 
 .card__description {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
+  font-size: var(--sp-m);
 }
 
 .card__techs {
@@ -23,20 +24,20 @@
 
 .card__techs-stacks {
   min-width: 100px;
+  font-size: var(--sp-m);
 }
 
 .card__techs-labels {
   display: flex;
   flex-wrap: wrap;
-  gap: 23px;
+  gap: 14px;
 }
 
 .card__techs-label {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: calc((100% - 46px) / 2);
-  padding: 2px 6px;
+  font-size: var(--sp-m);
+  padding: 2px var(--sp-s);
   background-color: var(--green);
-  text-align: center;
   border-radius: var(--sp-s);
+  height: var(--sp-l);
+  text-align: center;
 }
